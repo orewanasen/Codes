@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char temp;
+    double f,t;
+ printf("\nIs the temperature in (C) or (F)? :");
+ scanf("%c",&temp);  
+ temp = toupper(temp); 
+ if (temp == 'C'){
+    printf("Input the temperature in Celcius \n:");
+    scanf("%lf",&t);
+    f=(t*9/5)+32;
+    printf("The temperature in Farenhite is %.1lf\n",f);
+ }
+else if (temp=='F'){
+printf("Enter the temperature in Farenhite\n");
+scanf("%lf",&f);
+t=((f-32)*5)/9;
+printf("The temperature in celcius is %.1lf\n",t);
+}
+else{
+    printf("Enter a valid unit\n");
+}
+return 0;
+}
