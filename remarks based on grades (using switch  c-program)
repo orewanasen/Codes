@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    char grade;
+    printf("\nEnter your grade :");
+    scanf("%c",&grade);
+    switch(grade){
+        case 'A' :
+        printf("Awesome!\n");
+        break;
+        case 'B' :
+        printf("Good!\n");
+        break;
+        case 'C':
+        printf("Nice!\n");
+        break;
+        case 'D':
+        printf("Atleast not an fail!\n");
+        break;
+        case 'F':
+        printf("Better luck Next time Buddy!\n");
+        break;
+        Default:
+        printf("Enter a valid grade!\n");
+        }
+
+return 0;
+}
